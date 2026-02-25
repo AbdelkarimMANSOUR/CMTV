@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: cabinet-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cabinet
+      POSTGRES_PASSWORD: cabinet
+      POSTGRES_DB: cabinet
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: cabinet-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+volumes:
+  pg_data:
