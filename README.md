@@ -8,6 +8,12 @@ Application web complète pour la gestion d’un cabinet médical:
 - Rapports IA, traçabilité, équipements LAN, landing pages.
 - Profil médecin et dashboard global.
 
+## Deploiement production
+
+Guide simple VPS/Nginx/Docker:
+
+- [DEPLOYMENT_PRODUCTION.md](/Users/kiko/Desktop/test/Cabinet/DEPLOYMENT_PRODUCTION.md)
+
 ## Structure
 
 - [`/backend`](/Users/kiko/Desktop/test/Cabinet/backend): API Express + Prisma.
